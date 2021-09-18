@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final_test</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <!-- 左侧内容 -->
+            <div class="col-lg-4 position-fixed border-right">
+                <!-- 头部内容 -->
+                <header class="bg-white navbar mt-1 justify-content-start px-lg-3 px-0 d-none d-sm-flex">
+                    <nav class="navbar-brand"><img src="images/logo.svg" alt="" width="36"></nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">门店</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">我的账户</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">菜单</a>
+                        </li>
+                    </ul>
+                    <span class="iconfont icon-menu ml-auto" id="showBtn"></span>
+                </header>
+                <!-- 居中内容 -->
+                <div class="left-center-con d-flex align-items-center">
+                    <div class="px-lg-5 px-0">
+                        <h1 class="font-weight-bold py-3">心情惬意，来杯咖啡吧☕</h1>
+                        <div class="my-3">
+                            <a href="#" class="btn text-success pl-0">
+                                <span class="iconfont icon-denglu"></span>
+                                <span>登录</span>
+                            </a>
+                            <a href="#" class="btn btn-outline-success ml-4 px-4">
+                                <span>注册</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 点击后的菜单内容 -->
+                <div
+                    class="bottom-con d-flex flex-column position-absolute bg-white menu px-lg-3 py-0 py-lg-4 justify-content-between hide">
+                    <!-- 头部 -->
+                    <header class="navbar">
+                        <nav class="navbar-brand"><img src="images/logo.svg" alt="" width="36"></nav>
+                        <span class="iconfont icon-guanbi" id="closeBtn"></span>
+                    </header>
+                    <!-- 中间内容 -->
+                    <div class="bottom-con-center list">
+                        <ul class="mx-sm-5 px-sm-5 mb-0 px-0">
+                            <li><a href="#" class="text-dark font-weight-bold">门店</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">星享俱乐部</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">菜单</a></li>
+                            <hr>
+                            <li><a href="#" class="text-dark font-weight-bold">星巴克移动应用</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">星礼卡</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">星巴克臻选™</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">啡快™ － 在线点 到店取</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">专星送™</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">咖啡星讲堂</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">上海烘焙工坊</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">关于星巴克</a></li>
+                            <li><a href="#" class="text-dark font-weight-bold">帮助中心</a></li>
+                            <hr>
+                        </ul>
+                        <!-- 两个按钮 -->
+                        <div class="mx-sm-5 px-sm-5 mb-0">
+                            <a href="#" class="btn text-success pl-0">
+                                <span class="iconfont icon-denglu"></span>
+                                <span>登录</span>
+                            </a>
+                            <a href="#" class="btn btn-outline-success ml-4 px-4">
+                                <span>注册</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 尾部 -->
+                    <footer class="mx-sm-5 px-sm-5 mb-5">
+                        <p class="mb-0"><a href="#">English</a> | <a href="#">隐私政策</a> | <a href="#">使用条款</a></p>
+                        <p class="mb-0"><a href="#"><img src="images/icpicon.png" width="10" height="10" alt="">沪公网安备
+                                31010402000318号</a> | <a href="#">沪ICP备17003747号</a></p>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- 右侧内容 -->
+            <div class="col-lg-8 right-con bg-light">
+                <div class="row">
+                    <!-- 轮播图 -->
+                    <div class="carousel slide" data-ride="carousel" id="pic">
+                        <!-- 内容区 -->
+                        <div class="carousel-inner">
+                            <a href="#" class="carousel-item active">
+                                <img src="images/kv1.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#" class="carousel-item">
+                                <img src="images/kv2.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#" class="carousel-item">
+                                <img src="images/kv3.jpg" alt="" class="img-fluid">
+                            </a>
+                            <a href="#" class="carousel-item">
+                                <img src="images/kv4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- 控制器区 -->
+                        <a class="carousel-control-prev" href="#pic" data-slide="prev">
+                            <span class="iconfont icon-left"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#pic" data-slide="next">
+                            <span class="iconfont icon-right"></span>
+                        </a>
+                        <!-- 指示器区 -->
+                        <ul class="carousel-indicators">
+                            <li class="active" data-target="#pic" data-slide-to="0"></li>
+                            <li class="" data-target="#pic" data-slide-to="1"></li>
+                            <li class="" data-target="#pic" data-slide-to="2"></li>
+                            <li class="" data-target="#pic" data-slide-to="3"></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="row justify-content-between py-4">
+                    <!-- 三张图片 -->
+                    <div class="col-sm-4 my-2 my-sm-0">
+                        <a href="#">
+                            <img src="images/img_01.jpg" alt="" class="img-fluid img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 my-2 my-sm-0">
+                        <a href="#">
+                            <img src="images/img_02.jpg" alt="" class="img-fluid img-thumbnail">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 my-2 my-sm-0">
+                        <a href="#">
+                            <img src="images/img_03.jpg" alt="" class="img-fluid img-thumbnail">
+                        </a>
+                    </div>
+                </div>
+                <!-- 星享俱乐部 -->
+                <div class="row bg-white p-5 align-items-center star-club">
+                    <div class="col-12 col-sm-5 text-sm-left text-center mr-auto">
+                        <h1>星享俱乐部</h1>
+                        <p class="text-muted py-3">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。<a href="#" class="">了解更多 ›</a></p>
+                        <a href="#" class="btn btn-outline-success btn-lg">注册</a>
+                        <a href="#" class="btn btn-outline-success btn-lg">登录</a>
+                    </div>
+                    <div class="col-sm text-sm-right text-center mt-5 mt-sm-0 ">
+                        <img src="images/logo-msr-new.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- 星巴克精选 -->
+                <div class="col-12 text-center star-special mb-5">
+                    <h2 class="my-4 text-dark">星巴克精选</h2>
+                    <p class="text-muted">在星巴克天猫旗舰店发现更多咖啡心意</p>
+                </div>
+                <!-- 了解更多 › -->
+                <div class="col-12">
+                    <ul class="row justify-content-around px-3">
+                        <li class="col-6 col-md-3 my-5 ">
+                            <a href="#"
+                                class="d-inline-block bg-white text-center position-relative px-2 rounded text-dark">
+                                <img src="images/tmall-card-01.png" alt="" class="img-fluid">
+                                <h2>会员星礼包</h2>
+                                <p class="text-muted">星享卡新升级<br>更多心意好礼</p>
+                                <p>了解更多 ›</p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3 my-5">
+                            <a href="#"
+                                class="d-inline-block bg-white text-center position-relative px-2 rounded text-dark">
+                                <img src="images/tmall-card-02.png" alt="" class="img-fluid">
+                                <h2>星礼卡</h2>
+                                <p class="text-muted">用一份心礼<br>让心意相随</p>
+                                <p>了解更多 ›</p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3 my-5">
+                            <a href="#"
+                                class="d-inline-block bg-white text-center position-relative px-2 rounded text-dark">
+                                <img src="images/tmall-card-03.png" alt="" class="img-fluid">
+                                <h2>电子产品券</h2>
+                                <p class="text-muted">心意<br>从这一杯开始</p>
+                                <p>了解更多 ›</p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3 my-5">
+                            <a href="#"
+                                class="d-inline-block bg-white text-center position-relative px-2 rounded text-dark">
+                                <img src="images/tmall-card-04.png" alt="" class="img-fluid">
+                                <h2>咖啡生活</h2>
+                                <p class="text-muted">星巴克<br>用心制作</p>
+                                <p>了解更多 ›</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- 咖啡星讲堂 -->
+                <div class="row coffee-star overflow-hidden mb-5 pb-5 pb-sm-0">
+                    <div class="col-12 text-center mb-3">
+                        <h2 class="py-4">1912 派克街 | 咖啡星讲堂</h2>
+                        <p class="text-muted">了解更多星巴克咖啡文化</p>
+                    </div>
+                    <!-- 滚动内容 -->
+                    <div class="right-con-bottom-scroll">
+                        <ul class="d-flex justify-content-between">
+                            <li class="card mr-4">
+                                <a href="#"><img src="images/scroll_img_01.jpg" alt="" class="card-img-top"></a>
+                                <span class="d-inline-block px-3 py-2 text-white">咖啡知识</span>
+                                <div class="card-body">
+                                    <p class="card-title mb-0">咖啡的起源与培植</p>
+                                </div>
+                            </li>
+                            <li class="card mr-4">
+                                <a href="#"><img src="images/scroll_img_02.jpg" alt="" class="card-img-top"></a>
+                                <span class="d-inline-block px-3 py-2 text-white">咖啡调制</span>
+                                <div class="card-body">
+                                    <p class="card-title mb-0">咖啡品鉴</p>
+                                </div>
+                            </li>
+                            <li class="card mr-4">
+                                <a href="#"><img src="images/scroll_img_03.jpg" alt="" class="card-img-top"></a>
+                                <span class="d-inline-block px-3 py-2 text-white">咖啡烘焙</span>
+                                <div class="card-body">
+                                    <p class="card-title mb-0">咖啡知识</p>
+                                </div>
+                            </li>
+                            <li class="card mr-4">
+                                <a href="#"><img src="images/scroll_img_04.jpg" alt="" class="card-img-top"></a>
+                                <span class="d-inline-block px-3 py-2 text-white">手冲咖啡</span>
+                                <div class="card-body">
+                                    <p class="card-title mb-0">咖啡品鉴</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部菜单 -->
+        <footer class="fixed-bottom d-sm-none bg-white pb-2 footer">
+            <ul class="row d-flex list-unstyled justify-content-around mb-0">
+                <li class="text-center">
+                    <a href="#" class="text-muted active">
+                        <span class="iconfont icon-shouye d-block"></span>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="text-center">
+                    <a href="#" class="text-muted">
+                        <span class="iconfont icon-mendian d-block"></span>
+                        <span>门店</span>
+                    </a>
+                </li>
+                <li class="text-center">
+                    <a href="#" class="text-muted">
+                        <span class="iconfont icon-weibiaoti5 d-block"></span>
+                        <span>我的账户</span>
+                    </a>
+                </li>
+                <li class="text-center">
+                    <a href="#" class="text-muted">
+                        <span class="iconfont icon-caidan d-block"></span>
+                        <span>菜单</span>
+                    </a>
+                </li>
+                <li class="text-center">
+                    <a href="#" class="text-muted">
+                        <span class="iconfont icon-gengduo d-block"></span>
+                        <span>更多</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+        (function () {
+            var bottomConMenu = $('.bottom-con.menu'),
+                rightCon = $('div.right-con'),
+                cofferStar = $('.coffee-star .right-con-bottom-scroll'),
+                scrollList = cofferStar.find('li'),
+                hideContent = function () {
+                    if ($(window).innerWidth() < 992 && bottomConMenu.hasClass('show')) {
+                        rightCon.addClass('invisible');
+                        $('body').addClass('overflow-hidden');
+                    } else {
+                        rightCon.removeClass('invisible');
+                        $('body').removeClass('overflow-hidden');
+                    }
+                    $('.right-con-bottom-scroll').removeAttr('style')
+                };
+            $('#showBtn').click(function () {
+                bottomConMenu.removeClass('hide').addClass('show');
+                hideContent();
+            })
+            $('#closeBtn').click(function () {
+                bottomConMenu.removeClass('show').addClass('hide');
+                hideContent();
+            })
+            $(window).resize(hideContent);
+            scrollList.mouseover(function (e) {
+                var contentWidth = $(cofferStar).width(),
+                    prevContentWidth = $(cofferStar).prev().width(),
+                    relWidth = contentWidth - prevContentWidth;
+                // console.log('1');
+                // console.log(e.pageX, e.screenX, e.clientX, e.offsetX);
+                if ($(cofferStar).width() > $(cofferStar).parent().width()) {
+                    // console.log($(window).outerWidth());
+                    // console.log(1);
+                    // console.log(window.getComputedStyle(this).width);
+                    if (e.pageX <= $(window).outerWidth() / 12 * 8 && $(window).outerWidth() > 992) {
+                        $(cofferStar).css({
+                            marginLeft: 0
+                        })
+                    } else if (e.pageX >= $(window).outerWidth() / 12 * 10 && $(window).outerWidth() >
+                        992) {
+                        $(cofferStar).css({
+                            marginLeft: -relWidth
+                        })
+                    } else if (e.pageX <= $(window).outerWidth() * 0.4 && $(window).outerWidth() < 992) {
+                        $(cofferStar).css({
+                            marginLeft: 0
+                        })
+                    } else if (e.pageX >= $(window).outerWidth() * 0.6 && $(window).outerWidth() < 992) {
+                        // console.log(1);
+                        $(cofferStar).css({
+                            marginLeft: -relWidth
+                        })
+                    }
+                }
+            })
+        })()
+    </script>
+</body>
+
+</html>
